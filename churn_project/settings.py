@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'churn'
 ]
 
 MIDDLEWARE = [
@@ -75,11 +76,11 @@ WSGI_APPLICATION = 'churn_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'churn_db',
-        'USER' : 'hesam', # Hide them later
-        'PASSWORD': '123', # I will hide  them later 
-        'HOST' : '127.0.0.1',
-        'PORT': '5432'
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': '123',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
